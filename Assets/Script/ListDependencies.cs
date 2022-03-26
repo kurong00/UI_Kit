@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 
-public class PrefabReferences : EditorWindow
+public class ListDependencies : EditorWindow
 {
     private static Object searchObject;
     private static string PrefabFolder = "Assets/Res/UI";
@@ -12,7 +12,7 @@ public class PrefabReferences : EditorWindow
     [MenuItem("MiniTool/Search Dependence")]
     static void Open()
     {
-        PrefabReferences window = (PrefabReferences)EditorWindow.GetWindow(typeof(PrefabReferences));
+        ListDependencies window = (ListDependencies)EditorWindow.GetWindow(typeof(ListDependencies));
         window.Show();
     }
     private void OnGUI()
