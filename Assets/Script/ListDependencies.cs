@@ -9,7 +9,7 @@ public class ListDependencies : EditorWindow
     private static string PrefabFolder = "Assets/Res/UI";
     Vector2 scrollPos;
     List<Object> result = new List<Object>();
-    [MenuItem("MiniTool/Search Dependence")]
+    [MenuItem("MiniTool/List Dependencies")]
     static void Open()
     {
         ListDependencies window = (ListDependencies)EditorWindow.GetWindow(typeof(ListDependencies));
